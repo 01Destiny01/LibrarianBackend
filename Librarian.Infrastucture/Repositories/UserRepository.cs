@@ -19,5 +19,10 @@ namespace Librarian.Infrastucture.Repositories
         {
             _context.Users.Add(user);
         }
+
+        public async Task<List<User>> GetUsers()
+        {
+            return _context.Users.ToList();
+        }
     }
 }

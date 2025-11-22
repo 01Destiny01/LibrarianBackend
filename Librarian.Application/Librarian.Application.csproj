@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Librarian.Domain\Librarian.Domain.csproj" />
+    <ProjectReference Include="..\Librarian.Infrastucture\Librarian.Infrastucture.csproj" />
   </ItemGroup>
 
 </Project>

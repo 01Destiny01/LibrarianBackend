@@ -8,5 +8,6 @@ namespace Librarian.Infrastucture.Interfaces
     public interface IUserRepository
     {
         Task AddUser(User user);
+        Task<List<User>> GetUsers();
     }
 }

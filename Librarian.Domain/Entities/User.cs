@@ -12,7 +12,7 @@
 
         // LAM -> TODO: Hablar con el equipo para ver como queremos hacer el tema entidades.
         public DateTime CreatedAt { get; set; }
-        public DateTime DisabledAt { get; set; }
+        public DateTime? DisabledAt { get; set; }
         public bool Active { get; set; }
     }
 }

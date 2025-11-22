@@ -1,12 +1,21 @@
-﻿using Librarian.Domain.Entities;
+﻿using Librarian.Application.Interfaces;
+using Librarian.Domain.Entities;
+using Librarian.Infrastucture.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Librarian.Domain.Services
 {
-    public class UserService
+    public class UserService: IUserService
     {
+        IUserRepository _userRepository;
+        public UserService(IUserRepository userRepository)
+        {
+            _userRepository = userRepository;
+        }
+
+
         public async Task CreateUser(string firstName, string lastName, string email, string username, string password)
         {
             // TODO: Añadir FluentValidations para crear validaciones del usuario.
@@ -24,6 +33,11 @@ namespace Librarian.Domain.Services
 
             // TODO: Mandar correo al usuario para verificar, tambien comprobar si el correo es válido.
             
+        }
+
+        public async Task<List<User>> GetUsers()
+        {
+            return await _userRepository.GetUsers();
         }
     }
 }

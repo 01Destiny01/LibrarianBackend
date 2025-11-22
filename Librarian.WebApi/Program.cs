@@ -1,3 +1,4 @@
+using Librarian.Application.Interfaces;
 using Librarian.Domain.Services;
 using Librarian.Infrastucture.Data;
 using Librarian.Infrastucture.Interfaces;
@@ -15,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<LibrarianDbContext>();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 
