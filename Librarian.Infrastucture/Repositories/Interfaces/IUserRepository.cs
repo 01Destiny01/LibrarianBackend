@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Librarian.Infrastucture.Interfaces
+namespace Librarian.Infrastucture.Repositories.Interfaces
 {
     public interface IUserRepository
     {

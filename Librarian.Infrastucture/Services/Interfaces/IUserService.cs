@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Librarian.Application.Interfaces
+namespace Librarian.Infrastucture.Services.Interfaces
 {
     public interface IUserService
     {

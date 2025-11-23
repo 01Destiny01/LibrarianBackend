@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.0.11205.157 d18.0
+VisualStudioVersion = 18.0.11205.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Librarian.WebApi", "Librarian.WebApi\Librarian.WebApi.csproj", "{C03F40EF-0999-4E97-8881-B89E3F96864C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Librarian.Domain", "Librarian.Domain\Librarian.Domain.csproj", "{B3F231C1-4D66-4CF7-A310-A3AE43542F59}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Librarian.Application", "Librarian.Application\Librarian.Application.csproj", "{D8543B3D-57CC-4BAD-AE38-07D4CBA97B33}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Librarian.Infrastucture", "Librarian.Infrastucture\Librarian.Infrastucture.csproj", "{D5BB439A-2EA7-4847-AC75-7E704B31A939}"
 EndProject
@@ -25,10 +23,6 @@ Global
 		{B3F231C1-4D66-4CF7-A310-A3AE43542F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3F231C1-4D66-4CF7-A310-A3AE43542F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3F231C1-4D66-4CF7-A310-A3AE43542F59}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8543B3D-57CC-4BAD-AE38-07D4CBA97B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8543B3D-57CC-4BAD-AE38-07D4CBA97B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8543B3D-57CC-4BAD-AE38-07D4CBA97B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8543B3D-57CC-4BAD-AE38-07D4CBA97B33}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5BB439A-2EA7-4847-AC75-7E704B31A939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5BB439A-2EA7-4847-AC75-7E704B31A939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5BB439A-2EA7-4847-AC75-7E704B31A939}.Release|Any CPU.ActiveCfg = Release|Any CPU

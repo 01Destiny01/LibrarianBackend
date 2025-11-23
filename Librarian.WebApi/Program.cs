@@ -1,8 +1,8 @@
-using Librarian.Application.Interfaces;
 using Librarian.Domain.Services;
 using Librarian.Infrastucture.Data;
-using Librarian.Infrastucture.Interfaces;
 using Librarian.Infrastucture.Repositories;
+using Librarian.Infrastucture.Repositories.Interfaces;
+using Librarian.Infrastucture.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,6 +1,6 @@
 ﻿using Librarian.Domain.Entities;
 using Librarian.Infrastucture.Data;
-using Librarian.Infrastucture.Interfaces;
+using Librarian.Infrastucture.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
