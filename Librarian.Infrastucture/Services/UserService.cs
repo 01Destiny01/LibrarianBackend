@@ -1,20 +1,17 @@
 ﻿using Librarian.Domain.Entities;
-using Librarian.Infrastucture.Repositories.Interfaces;
+using Librarian.Infrastucture.Data;
 using Librarian.Infrastucture.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.EntityFrameworkCore;
 
 namespace Librarian.Domain.Services
 {
     public class UserService: IUserService
     {
-        IUserRepository _userRepository;
-        public UserService(IUserRepository userRepository)
+        private readonly LibrarianDbContext _context;
+        public UserService(LibrarianDbContext context)
         {
-            _userRepository = userRepository;
+            _context = context;
         }
-
 
         public async Task CreateUser(string firstName, string lastName, string email, string username, string password)
         {
@@ -37,7 +34,7 @@ namespace Librarian.Domain.Services
 
         public async Task<List<User>> GetUsers()
         {
-            return await _userRepository.GetUsers();
+            return _context.Users.ToList();
         }
     }
 }
