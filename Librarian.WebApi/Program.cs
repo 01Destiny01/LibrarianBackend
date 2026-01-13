@@ -15,7 +15,6 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<LibrarianDbContext>();
 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
